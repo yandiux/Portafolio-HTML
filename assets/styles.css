@@ -43,6 +43,26 @@ footer{
     
 }
 
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  
+
+  
+}
+
+.presentation {
+    animation-duration: 2.5s;
+    animation-name: slidein;
+  
+}
 /* navigation bar */
 nav {
     background-color: transparent;
@@ -322,49 +342,8 @@ color: #fafafa;
     text-align: start;
 }
 
-.portfoliobuttons {
-    width: 100%;
-    display: flex;
-    justify-content: center ;
-}
 
 
-
-.buttonstyle {
-    background-color: black;
-
-   
-    border: solid 2px #FFFFFF;
-    margin: 20px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0px;
-    cursor: pointer;
-    box-shadow: 1px 1px 1px #6160601f;
-    border-radius: 2px;
-    transition: all 0.25s;
-}
-
-.buttonstyle:hover {
-    transform: translateY(-4px);
-    box-shadow: rgba(0, 0, 0, 0.2);
-    transition: all 0.5s;
-} 
-
-.buttonstyle a {
-    display: flex;
-}
-
-.buttonstyle p{
-    font-size: 14px;
-    padding-left: 10px;
-    color: #ffffff;
-}
-
-.buttonstyle i {
-    color: #ffffff;
-}
 
 .infoproject h3 i {
     color: rgb(38, 174, 253);
@@ -559,11 +538,58 @@ color: #fafafa;
     margin-top: 5px;
 }
 
+.portfoliobuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.buttonstyle {
+    background-color: black;
+    margin-top: 5%;
+    margin-left: 1rem;
+    width: 180px;
+    height: 80px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    border: solid 2px #FFFFFF;
+}
+
+.buttonstyle:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+} 
+
+.buttonstyle a {
+    display: flex;
+}
+
+.buttonstyle p{
+    font-size: 14px;
+    padding-left: 10px;
+    color: #ffffff;
+}
+
+.buttonstyle i {
+    color: #fff;
+  margin-top: 0.8rem;
+  margin-left: 0.5rem;
+  
+    
+}
+
+
+
+
 
 
 
 @media (min-width: 180px) and (max-width: 768px){
 
+    
    
     
     h3 {
@@ -816,6 +842,21 @@ color: #fafafa;
 
 @media(min-width: 768px) {
 
+   
+
+    .portfolioimage {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 10px 0px;
+        padding: 0px 20px;
+    }
+    .portfolioimage img {
+        margin-right: 0px;
+        padding-left: 0px;
+    }
+
+
     
 
     h3 {
@@ -1030,6 +1071,7 @@ color: #fafafa;
     }
     nav a {
         color: white;
+        font-weight: bold;
     }
     nav li {
         display: inline-block;
